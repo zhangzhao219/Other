@@ -1,0 +1,61 @@
+.container{
+  height: 100vh;
+  background-color: silver;
+  display: flex;
+  flex-direction: column;
+}
+.topPanel{
+  height: 300rpx;
+  background-color: #686F79;
+  display: flex;
+  flex-direction: row;
+}
+.servicePanel{
+  min-height: 600rpx;
+  background-color: white;
+  margin: 20rpx 0;
+}
+.serviceTitle{
+  padding: 20rpx;
+  border: 1rpx solid silver;
+  font-size: 30rpx;
+  color: gray;
+}
+.serviceBlocks{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.box1{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 33%;
+  height: 250rpx;
+}
+.box1 image{
+  width: 110rpx;
+  height: 110rpx;
+  margin: 20rpx;
+}
+.box1 text{
+  text-align: center;
+  color: white;
+  font-size: 35rpx;
+}
+.box2{
+  border: 1rpx solid silver;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 32%;
+  height: 230rpx;
+}
+.box2 image{
+  width: 90rpx;
+  height: 90rpx;
+}
+.box2 text{
+  font-size: 30rpx;
+}

@@ -1,0 +1,11 @@
+input{
+  border: 1rpx solid green;
+  margin: 30rpx 0;
+  height: 90rpx;
+  border-radius: 20px;
+  font-size: medium;
+  text-align: center;
+}
+#tip{
+  height: 800rpx;
+}

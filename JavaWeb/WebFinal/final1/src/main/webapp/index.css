@@ -1,0 +1,53 @@
+/* 清除预定义样式 */
+body,dl,dd,p,h1,h2,h3,h4,h5,h6 {
+    margin: 0;
+    font-size: 12px;
+}
+ol,ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+img {
+    border: none;
+}
+
+body {
+    width:800px; /* 宽度为800px */
+    margin:0 auto; /* 居中对齐 */
+}
+/* 上方横幅样式 */
+header {
+    background-color: gray; /* 背景颜色 */
+    position: relative; /* 方便后续小字的绝对定位 */
+    color: white; /* 字体颜色 */
+}
+header #dazi {
+    font-size: 40px;
+    font-family: "楷体";
+}
+header #xiaozi {
+    position: absolute; /* 绝对定位 */
+    /* 紧贴右下角 */
+    right: 0px;
+    bottom: 0px;
+}
+/* 圆圈集合 */
+#circleset {
+    display: flex; /* flex布局 */
+    flex-direction: row; /* 按行的方向 */
+    flex-wrap:wrap; /* 自动填充到下一行 */
+}
+/* 单个圆圈的样式 */
+.circle {
+    border-radius: 50%;
+    /* 60+20+20=100，左右不合并 */
+	width: 60px;
+	height: 60px; 
+    background-color: green;
+    margin: 20px;
+}
+

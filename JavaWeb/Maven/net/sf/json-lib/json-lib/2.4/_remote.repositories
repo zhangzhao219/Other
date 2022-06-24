@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Mon Dec 21 20:50:56 CST 2020
+json-lib-2.4.pom>alimaven=
+json-lib-2.4-jdk13.jar>alimaven=
+json-lib-2.4-jdk15.jar>alimaven=

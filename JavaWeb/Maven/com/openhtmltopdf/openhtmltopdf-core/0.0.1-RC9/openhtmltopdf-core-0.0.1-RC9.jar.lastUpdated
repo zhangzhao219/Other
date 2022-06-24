@@ -1,0 +1,4 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Sat Oct 03 23:16:18 CST 2020
+@default-alimaven-http\://maven.aliyun.com/nexus/content/repositories/central/.lastUpdated=1601738178841
+http\://maven.aliyun.com/nexus/content/repositories/central/.error=Could not transfer artifact com.openhtmltopdf\:openhtmltopdf-core\:jar\:0.0.1-RC9 from/to alimaven (http\://maven.aliyun.com/nexus/content/repositories/central/)\: GET request of\: com/openhtmltopdf/openhtmltopdf-core/0.0.1-RC9/openhtmltopdf-core-0.0.1-RC9.jar from alimaven failed

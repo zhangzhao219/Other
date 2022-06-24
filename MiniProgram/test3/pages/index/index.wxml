@@ -1,0 +1,17 @@
+<view class="container">
+  <view class="topPanel">
+    <view class = 'box1' wx:for="{{array1}}" wx:key="array1_{{index}}">
+      <image src="{{item.icon}}"></image>
+      <text>{{item.text}}</text>
+    </view>
+  </view>
+  <view class="servicePanel">
+    <view class="serviceTitle">腾讯服务</view>
+    <view class="serviceBlocks">
+      <view class="box2" wx:for="{{array2}}" wx:key="array2_{{index}}">
+        <image src="{{item.icon}}"></image>
+        <text>{{item.text}}</text>
+      </view>
+    </view>
+  </view>
+</view>

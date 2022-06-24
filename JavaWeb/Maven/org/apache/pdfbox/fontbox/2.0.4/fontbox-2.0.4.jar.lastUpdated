@@ -1,0 +1,6 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Sat Oct 03 23:16:20 CST 2020
+https\://repository.apache.org/content/groups/snapshots/.error=
+@default-alimaven-http\://maven.aliyun.com/nexus/content/repositories/central/.lastUpdated=1601738178844
+http\://maven.aliyun.com/nexus/content/repositories/central/.error=Could not transfer artifact org.apache.pdfbox\:fontbox\:jar\:2.0.4 from/to alimaven (http\://maven.aliyun.com/nexus/content/repositories/central/)\: GET request of\: org/apache/pdfbox/fontbox/2.0.4/fontbox-2.0.4.jar from alimaven failed
+https\://repository.apache.org/content/groups/snapshots/.lastUpdated=1601738180353

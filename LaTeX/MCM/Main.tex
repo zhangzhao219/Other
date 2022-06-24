@@ -1,0 +1,68 @@
+% !TEX program = xelatex
+\documentclass{mcmthesis}
+\mcmsetup{CTeX =false,   % 使用 CTeX 套装时，设置为 true
+        tcn = 2113633, problem = A,
+        sheet = true, titleinsheet =true, keywordsinsheet = true,
+        titlepage =false, abstract = false}
+\usepackage{palatino}
+\usepackage{lipsum}
+\usepackage{times}
+\usepackage{geometry}
+\usepackage{float}
+\usepackage{diagbox}
+\usepackage{multicol}
+\usepackage{setspace}
+% \usepackage{ctex}
+%===============设置正文和数学字体=============================
+%有些字体需要安装一些字体文件，注意辨别。
+
+
+\usepackage{graphicx}
+\usepackage{subfigure}
+%设置段落之间的距离，若不需要删除或者注释掉即可。
+\setlength\parskip{.5\baselineskip}
+\newtheorem{definition}{Definition}[section]
+%\def\abstractname{Summary}%可修改摘要名称
+
+\usepackage{indentfirst}
+\setlength{\parindent}{2em}
+
+\usepackage{chngpage}
+\usepackage{array}
+\usepackage{booktabs}
+\usepackage{threeparttable}
+\usepackage{longtable}
+\usepackage[numbers,sort&compress]{natbib}
+%%% 实现参考文献标号在右上角
+\newcommand{\upcite}[1]{\textsuperscript{\textsuperscript{\cite{#1}}}}
+%然后引用的时候使用\upcite{}的格式（一般的正常引用格式为\cite{}）
+
+\usepackage{titletoc}
+\titlecontents{section}[3cm]{\bf \large}{\contentslabel{2.8em}}{}{%
+\titlerule*[0.5pc]{$\cdot$}\contentspage}%
+\titlecontents{subsection}[4cm]{\normalsize}{\contentslabel{2.5em}}{}{%
+\titlerule*[0.5pc]{$\cdot$}\contentspage}%
+\titlecontents{subsubsection}[5.3cm]{\normalsize}{\contentslabel{3.0em}}{}{%
+\titlerule*[0.5pc]{$\cdot$}\contentspage}%
+
+\title{\large Research on the decomposition of fungi and related environmental problems}
+\author{ }
+
+\date{\today}
+
+\geometry{left=3.0cm,right=3.0cm}
+
+\linespread{1}
+
+\begin{document}
+\input{Main/Summary.tex}
+\include{Main/Contents}
+\input{Main/Chapter1/Chapter1_Main.tex}
+\input{Main/Chapter2/Chapter2_Main.tex}
+\input{Main/Chapter3/Chapter3_Main.tex}
+\input{Main/Chapter4/Chapter4_Main.tex}
+\input{Main/Chapter5/Chapter5_Main.tex}
+\include{Main/Article}
+\include{Main/References}
+% \include{Main/Appendices}
+\end{document}

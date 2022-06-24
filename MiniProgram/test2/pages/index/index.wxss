@@ -1,0 +1,26 @@
+.container{
+  height:100vh;
+  background-color: silver;
+  display: flex;
+  flex-direction: column;
+}
+.listGroup{
+  background-color: white;
+  margin: 20rpx 0;
+}
+.listItem{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border: 1rpx solid silver;
+  padding: 10rpx;
+}
+image{
+  width: 80rpx;
+  height: 80rpx;
+  margin: 0 15rpx;
+}
+text{
+  font-size: 40rpx;
+  flex-grow: 1;
+}

@@ -1,0 +1,4 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Sat Oct 03 23:32:01 CST 2020
+@default-alimaven-http\://maven.aliyun.com/nexus/content/repositories/central/.lastUpdated=1601739121968
+http\://maven.aliyun.com/nexus/content/repositories/central/.error=Could not transfer artifact xerces\:xercesImpl\:jar\:2.9.1 from/to alimaven (http\://maven.aliyun.com/nexus/content/repositories/central/)\: GET request of\: xerces/xercesImpl/2.9.1/xercesImpl-2.9.1.jar from alimaven failed

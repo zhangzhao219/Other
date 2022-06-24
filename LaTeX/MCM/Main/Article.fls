@@ -1,0 +1,4 @@
+PWD d:\Programming_Design\LaTeX\MCM\Main
+INPUT C:\Users\zhaoz\AppData\Local\MiKTeX\2.9\miktex\data\le\pdftex\pdflatex.fmt
+INPUT d:\Programming_Design\LaTeX\MCM\Main\Article.tex
+OUTPUT d:\Programming_Design\LaTeX\MCM\Main\Article.log

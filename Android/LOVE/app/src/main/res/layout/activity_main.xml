@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff0f5"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/mainpicture"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_margin="64dp"
+            android:layout_weight="4"
+            android:src="@drawable/a" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp">
+
+            <ImageView
+                android:id="@+id/loveimage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/b" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/zz"
+                android:src="@drawable/c" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/wzy"
+                android:src="@drawable/d" />
+
+            <TextView
+                android:id="@+id/zz"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toStartOf="@id/loveimage"
+                android:layout_toLeftOf="@id/loveimage"
+                android:text="Z Z"
+                android:textSize="32sp" />
+
+            <TextView
+                android:id="@+id/wzy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/loveimage"
+                android:layout_toRightOf="@id/loveimage"
+                android:text="WZY"
+                android:textSize="32sp" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/number_of_days"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:text="Error!"
+            android:textSize="32sp" />
+
+        <TextView
+            android:id="@+id/number_of_days2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:gravity="center_horizontal"
+            android:text="Error!"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/ymd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Error!"
+            android:textSize="24sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

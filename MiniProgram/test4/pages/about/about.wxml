@@ -1,0 +1,4 @@
+<!--pages/about/about.wxml-->
+<view class='container'>
+  <text>张兆工作室荣誉出品。</text>
+</view>

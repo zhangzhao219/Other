@@ -1,0 +1,19 @@
+import java.io.*;
+public class MyReadFile{
+    public static void main(String args[]){
+        try{
+            File infile = new File("./test.txt");
+            File outfile = new File("./test1.txt");
+
+            FileInputStream inf = new FileInputStream(infile);
+            FileOutputStream outf = new FileOutputStream(outfile);
+            int length = inf.available();
+            for(int i=0;i<length;i++){
+                outf.write(inf.read());
+            }
+        }
+        catch(Exception e){
+
+        }
+    }
+}

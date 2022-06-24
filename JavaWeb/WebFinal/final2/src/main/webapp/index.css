@@ -1,0 +1,54 @@
+/* 清除预定义样式 */
+body,dl,dd,p,h1,h2,h3,h4,h5,h6 {
+    margin: 0;
+    font-size: 12px;
+}
+ol,ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+img {
+    border: none;
+}
+body {
+    width:800px; /* 宽度为800px */
+    margin:0 auto; /* 居中对齐 */
+}
+/* 表格属性 */
+table, th, td {
+    margin: 0 auto;
+    border: 2px solid black;
+    /* 将表格的内边框和外边框合并 */
+    border-collapse: collapse;
+}
+/* 表格固定宽度居中显示 */
+table td {
+    width:150px;
+    text-align:center;
+}
+/* 已缴费 */
+.paid {
+    color:grey;
+
+}
+/* 未缴费 */
+.paidState {
+    color: blue;
+    text-decoration: underline;
+}
+.hi{
+    position: relative;
+    height: 100px;
+}
+.hi input {
+    display: inline;
+    float: right;
+}
+.hi button {
+    display: inline;
+    float: right;
+}

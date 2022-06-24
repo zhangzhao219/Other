@@ -1,0 +1,9 @@
+/* pages/form/form.wxss */
+/*文本输入框样式*/
+.shortInput{
+  width: 120rpx;
+}
+
+.longInput{
+  width: 200rpx;
+}
