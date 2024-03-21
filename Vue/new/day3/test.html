@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="app">
+        <!-- <p v-text="username"></p>
+        <p>性别：{{age}}</p>
+        <p v-text="desc"></p>
+        <p>{{desc}}</p>
+        <p v-html="desc"></p> -->
+        <!-- <input type="text" v-bind:placeholder="inputvalue">
+        <hr>
+        <img v-bind:src="imgsrc" alt=""> -->
+        <!-- <p>{{number + 1}}</p>
+        <p>{{ok?'True':'False'}}</p>
+        <p>{{message.split('').reverse().join('')}}</p>
+        <p :id="'list-' + id">xxx</p>
+        <p>{{user.name}}</p> -->
+        <!-- <h3>count:{{count}}</h3>
+        <button @click="addCount(2,$event)">+1</button> -->
+        <!-- <input type="text" @keyup.enter="submit" @keyup.esc="clearInput"> -->
+        <!-- <p>用户名是：{{username}}</p>
+        <input type="text" v-model.trim="username">
+        <hr>
+        <p>年龄是：{{age}}</p>
+        <input type="text" v-model.number="age">
+        <hr>
+        <p>地址是：{{address}}</p>
+        <input type="text" v-model.lazy="address">
+        <hr> -->
+        <!-- <select v-model="province">
+            <option value="">请选择</option>
+            <option value="1">北京</option>
+            <option value="2">河北</option>
+            <option value="3">黑龙江</option>
+        </select> -->
+        <!-- <button @click="flag = !flag">sd</button>
+        <p v-if="flag">ok</p>
+        <p v-else="flag">ok</p>
+        <p v-show="flag">okok</p> -->
+        <!-- <p>{{num}}</p>
+        <p v-if="num>0.5">随机数>0.5</p>
+        <p v-else-if="num>0.3">随机数>0.3</p>
+        <p v-else>随机数≤0.3</p> -->
+        <!-- <div>
+            <input type="text" v-model="name">
+            <button @click="addnewuser">添加</button>
+        </div>
+        <ul>
+            <li v-for="(item,index) in list" :key="item.id">
+                <input type="checkbox">
+                姓名是：{{item.name}}
+            </li>
+        </ul> -->
+        <p :title="info | capitalize">{{message | capitalize | maxlength(4)}}</p>
+    </div>
+    <div id="app2">
+        <p>{{abc | capitalize}}</p>
+    </div>
+
+    <script src="https://cdn.bootcdn.net/ajax/libs/vue/2.6.12/vue.js"></script>
+    <script>
+        Vue.filter('capitalize',(str) => {
+            return str.charAt(0).toUpperCase() + str.slice(1);
+        });
+        Vue.filter('maxlength',(str,len=10)=>{
+            if(str.length <= len){
+                return str;
+            }
+            return str.slice(0,len);
+        })
+    </script>
+    <script>
+        const vm = new Vue({
+            el: '#app',
+            data: {
+                // username: 'zs',
+                // age: 20,
+                // desc: '<i>abc<i>'
+                // inputvalue:'请输入内容',
+                // imgsrc:'./1.png'
+                // number: 9,
+                // ok: true,
+                // message: 'ABC',
+                // id: '355',
+                // user: {
+                //     name: 'zs'
+                // }
+                // count: 0
+                // username: 'zs',
+                // // province: '',
+                // age:1,
+                // address:'北京市'
+                // flag: true
+                // num:Math.random(),
+                // type:'A'
+                // list: [
+                //     { id: 1, name: 'zs' },
+                //     { id: 2, name: 'ls' }
+                // ],
+                // name: '',
+                // nextId: 3
+                message :'hello',
+                info :'title info'
+            },
+            methods: {
+                // addCount(step,e) {
+                //     const nowBgColor = e.target.style.backgroundColor;
+                //     e.target.style.backgroundColor = nowBgColor==='red'?'':'red';
+                //     this.count += step;
+                // }
+                // submit(e) {
+                //     console.log('dfds' + e.target.value);
+                // },
+                // clearInput(e) {
+                //     e.target.value = '';
+                // }
+                addnewuser() {
+                    this.list.unshift({ id: this.nextId, name: this.name })
+                    this.name = ''
+                    this.nextId++
+                }
+            },
+            // filters:{
+            //     capitalize(str){
+            //         return str.charAt(0).toUpperCase() + str.slice(1);
+            //     }
+            // }
+        })
+    </script>
+    <script>
+        const vm2 = new Vue({
+            el:'#app2',
+            data:{
+                abc:'abc'
+            }
+        })
+    </script>
+</body>
+
+</html>

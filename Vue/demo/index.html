@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="bg">
+        <div v-if="count > 0">
+            {{count}}
+        </div>
+        <div v-else>
+            fdsfds{{count}}
+        </div>
+        <div v-show="count == 5">
+            zhangzhao
+        </div>
+        <div v-for="item in list">
+            {{item}}
+        </div>
+        <button type="button" v-on:click="change()"></button>
+    </div>
+
+    <script src="https://cdn.bootcdn.net/ajax/libs/vue/2.5.17/vue.min.js"></script>
+    <script>
+        var app = new Vue({
+            el: '.bg',
+            data: {
+                msg: 'hello world',
+                count: -3,
+                list: [1, 2, 3, 4, 5]
+            },
+            methods: {
+                change: function () {
+                    this.count++;
+                }
+            }
+        })
+    </script>
+</body>
+
+</html>
